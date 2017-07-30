@@ -12,6 +12,8 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: spec.nodeName
+        - name: PV_DIR
+          value: "/mnt/local-disk"
       volumeMounts:
         - name: pv-volume
           mountPath: /tmp/hostpath-provisioner
